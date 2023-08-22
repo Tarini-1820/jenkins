@@ -1,6 +1,12 @@
 pipeline {
     agent any 
     stages {
+        stage('Pull') { 
+            steps {
+                echo 'successfully build'
+            }
+        }
+
     
         stage('Build') { 
             steps {
