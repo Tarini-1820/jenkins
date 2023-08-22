@@ -1,5 +1,10 @@
 pipeline {
     agent any 
+    stage('Pull') { 
+            steps {
+                echo 'successfully test' 
+            }
+        }
     stages {
         stage('Build') { 
             steps {
