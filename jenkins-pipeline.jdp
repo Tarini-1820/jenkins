@@ -1,6 +1,6 @@
 pipeline {
     agent any 
-    stage('Pull') { 
+    stages ('Pull') { 
             steps {
                 git 'https://github.com/rajatpzade/studentapp.ui.git'
             }
