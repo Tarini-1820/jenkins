@@ -3,7 +3,7 @@ node {
         git 'https://github.com/rajatpzade/studentapp.ui.git'
     }
     stage('Build') { 
-        // 
+         echo 'successfully build'
     }
     stage('Test') { 
         // 
