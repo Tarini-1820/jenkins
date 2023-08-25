@@ -3,23 +3,22 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                git 'https://github.com/rajatpzade/studentapp.ui.git'
+                git branch: 'master', url: 'https://github.com/rajatpzade/studentapp.ui.git'
             }
         }
-    
         stage('Build') { 
             steps {
-                echo 'successfully build'
+              sh '/opt/apache-maven/bin/mvn clean package'
             }
         }
         stage('Test') { 
             steps {
-                echo 'successfully test' 
+                echo 'Test successfully'
             }
         }
         stage('Deploy') { 
             steps {
-                echo 'successfully deploy' 
+                echo 'yahoo  Deploy successfully'
             }
         }
     }
